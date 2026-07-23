@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <style>
   :root{
     --green:#1f7a3d; --green-d:#0f5a2c; --green-dd:#0a3f20; --green-l:#3a9b58;
@@ -47,7 +48,7 @@
     backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--line)}
   .hd{display:flex;align-items:center;justify-content:space-between;height:74px}
   .brand{display:flex;align-items:center;gap:11px}
-  .brand svg{width:40px;height:40px}
+  .brand svg,.brand img{width:40px;height:40px}
   .brand b{font-size:1.24rem;font-weight:600;color:var(--ink);letter-spacing:-.02em}
   .brand small{display:block;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
     color:var(--muted);font-weight:500;margin-top:-2px}
@@ -212,18 +213,10 @@
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="leaf" viewBox="0 0 48 48">
-    <circle cx="24" cy="24" r="22.5" fill="#1f7a3d"/>
-    <circle cx="24" cy="24" r="22.5" fill="none" stroke="#e2711d" stroke-width="2.4"/>
-    <path d="M24 35c-1-8.5-5.8-13-11.5-14.5 5.7-1.1 9.9 1 11.5 6.2 1.6-5.2 5.8-7.3 11.5-6.2C29.8 22 25 26.5 24 35z" fill="#fff"/>
-  </symbol>
-</svg>
-
 <header class="site">
   <div class="wrap hd">
     <a class="brand" href="#top">
-      <svg><use href="#leaf"/></svg>
+      <img src="assets/logo.png" alt="Fitoanálise" width="40" height="40">
       <span><b>Fitoanálise</b><small>Laboratório Agronômico</small></span>
     </a>
     <nav class="main">
@@ -405,7 +398,7 @@
   <div class="wrap foot">
     <div>
       <div class="brand" style="display:flex;align-items:center;gap:11px">
-        <svg width="40" height="40"><use href="#leaf"/></svg>
+        <img src="assets/logo.png" alt="Fitoanálise" width="40" height="40">
         <span><b style="font-size:1.24rem">Fitoanálise</b><small style="display:block;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase">Laboratório Agronômico</small></span>
       </div>
       <p class="about">Análises agronômicas precisas e confiáveis para o produtor. Luís Eduardo Magalhães – BA. Atendemos todo o Brasil.</p>
